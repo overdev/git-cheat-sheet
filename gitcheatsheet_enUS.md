@@ -228,24 +228,24 @@ clear staging area, rewrite working tree from specified commit.
 
 ## TEMPORARY COMMITS
 
-TODO..
+Temporarily store modified, tracked files, in toder to change branches.
 
 ```
-git 
+git stash
 ```
-.
+save modified and staged changes.
 
 ```
-git 
+git stash list
 ```
-.
+list stack-order of stashed file changes.
 
 ```
-git 
+git stash pop
 ```
-.
+write working from top of stack.
 
 ```
-git 
+git stash drop
 ```
-.
+discard the changes from top of stash stack.
