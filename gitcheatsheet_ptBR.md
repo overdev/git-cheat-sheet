@@ -1,18 +1,18 @@
-# GIT CHEAT SHEET
+# FOLHA DE DICAS GIT
 
-Git is the free and open source distributed version control system that's responsible for everything GitHub related that happens locally on your computer. This cheat sheet features the most important and commonly used Git commands for easy reference.
+Git é o sistema de controle de versionamento distribuido gratuíto e código aberto que é responsável por tudo relacionado ao GitHub que acontece localmente no seu computador. Esta lista de dicas (ou cola) contém os mais importantes e usados comandos Git para fácil referência.
 
-## INSTALLATION & GUIs
+## INSTALAÇÃO & GUIs
 
-With platform specific installers for Git, GitHub also provides the ease of staying up-to-date with the latest releases of the command line tool while providing a graphical user interface for day-to-day interaction, review, and repository synchronization.
+Com instaladores Git específicos para cada plataforma, GitHub também disponibiliza a facilidade de estar sempre atualizado com as últimas versões da ferramenta de linha de comando enquanto provê uma interface gráfica para interação dia-a-dia, revisão, e sincronização de repositório.
 
-[GitHub for Windows](https://windows.github.com)
+[GitHub para Windows](https://windows.github.com)
 
-[GitHub for Mac](https://mac.github.com)
+[GitHub para Mac](https://mac.github.com)
 
-[Git for All Platforms](http://git-scm.com)
+[Git para Todas as Platformas](http://git-scm.com)
 
-## SETUP
+## CONFIGURAÇÃO
 
 Configuring user information used across all local repositories.
 
@@ -32,7 +32,7 @@ git config --global color.ui auto
 set automatic command line coloring for Git for easy reviewing.
 
 
-## SETUP & INIT
+## CONFIGURAÇÃO & INICIALIZAÇÃO
 
 Configuring user information, initializing and cloning repositories.
 
@@ -47,7 +47,7 @@ git clone [url]
 retrieve an entire repository from a hosted location via URL
 
 
-## STAGE & SNAPSHOT
+## PREPARAÇÃO (STAGE) & PRÉVIA (SNAPSHOT)
 
 Working with snapshots and the Git staging area
 
@@ -82,7 +82,7 @@ git commit -m "[descriptive message]"
 commit your staged content as a new commit snapshot.
 
 
-## BRANCH & MERGE
+## RAMIFICAÇÃO (BRANCH) & INTEGRAÇÃO (MERGE)
 
 Isolating work in branches, changing context, and integrating changes.
 
@@ -112,7 +112,7 @@ git log
 show all commits in the current branch's history.
 
 
-## INSPECT & COMPARE
+## INSPEÇÃO & COMPARAÇÃO
 
 Examining logs, diffs and object information.
 
@@ -142,7 +142,7 @@ git show [SHA]
 show any object in Git in human-readable format.
 
 
-## TRACKING PATH CHANGES
+## RATREANDO MUDANÇAS DE CAMINHO
 
 Versioning file removes and path changes.
 
@@ -162,7 +162,7 @@ git log --stat -M
 show all commit logs with indications of any paths that moved.
 
 
-## IGNORING PATTERNS
+## IGNORANDO PADRÕES
 
 Preventing unintentional staging or commiting of files
 
@@ -179,7 +179,7 @@ git config --global core.excludesfile [file]
 system wide ignore pattern for all local repositories.
 
 
-## SHARE AND UPDATE
+## COMPARTILHAMENTO E ATUALIZAÇÃO
 
 Retrieving updates from another repository and updating local repos.
 
@@ -209,7 +209,7 @@ git pull
 fetch and merge any commits from the tracking remote branch.
 
 
-## REWRITE HISTORY
+## REESCREVENDO HISTÓRICO
 
 Rewriting branches, updating commits and clearing history
 
@@ -224,7 +224,7 @@ git reset --hard [commit]
 clear staging area, rewrite working tree from specified commit.
 
 
-## TEMPORARY COMMITS
+## COMMITS TEMPORÁRIOS
 
 Temporarily store modified, tracked files, in toder to change branches.
 
