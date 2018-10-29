@@ -86,32 +86,33 @@ commit your staged content as a new commit snapshot.
 
 ## BRANCH & MERGE
 
-TODO..
+Isolating work in branches, changing context, and integrating changes.
 
 ```
-git 
+git branch
 ```
-.
+list your branches. a * will appear next to the currently active branch.
 
 ```
-git 
+git branch [branch-name]
 ```
-.
+create a new branch at the current commit.
 
 ```
-git 
+git checkout
 ```
-.
+switch to another branch and check it out into your working directory.
 
 ```
-git 
+git merge [branch]
 ```
-.
+merge the specified branch's history into the current one.
 
 ```
-git 
+git log
 ```
-.
+show all commits in the current branch's history.
+
 
 ## INSPECT & COMPARE
 
