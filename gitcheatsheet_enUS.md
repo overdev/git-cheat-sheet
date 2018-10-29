@@ -166,12 +166,19 @@ show all commit logs with indications of any paths that moved.
 
 ## IGNORING PATTERNS
 
-TODO..
+Preventing unintentional staging or commiting of files
 
 ```
-git 
+logs/
+*.notes
+pattern*/
 ```
-.
+save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.
+
+```
+git config --global core.excludesfile [file]
+```
+system wide ignore pattern for all local repositories.
 
 
 ## SHATE AND UPDATE
