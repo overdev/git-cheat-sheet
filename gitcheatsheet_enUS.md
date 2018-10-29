@@ -116,32 +116,32 @@ show all commits in the current branch's history.
 
 ## INSPECT & COMPARE
 
-TODO..
+Examining logs, diffs and object information.
 
 ```
-git 
+git log
 ```
-.
+show the commit history for the currently active branch.
 
 ```
-git 
+git log branchB..branchA
 ```
-.
+show the commits on branchA that are not on branchB.
 
 ```
-git 
+git log --follow [file]
 ```
-.
+show the commits that changed file, even across renames.
 
 ```
-git 
+git diff branchB...branchA
 ```
-.
+show the diff of what is in branchA that is not in branchB.
 
 ```
-git 
+git show [SHA]
 ```
-.
+show any object in Git in human-readable format.
 
 
 ## TRACKING PATH CHANGES
