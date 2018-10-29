@@ -14,236 +14,236 @@ Com instaladores Git específicos para cada plataforma, GitHub também disponibi
 
 ## CONFIGURAÇÃO
 
-Configuring user information used across all local repositories.
+Configurando informação do usuário em todos os repositórios locais.
 
 ```
 git config --global user.name "[firstname lastname]"
 ```
-set a name that is identifiable for credit when review vesion history.
+atribui um nome que é identificável como credencial durante a revisão do histórico.
 
 ```
 git config --global user.email "[valid-email]"
 ```
-set an email address that will be associated with each history marker.
+atribui um endereço de email que será associado a cada marcador de histórico.
 
 ```
 git config --global color.ui auto
 ```
-set automatic command line coloring for Git for easy reviewing.
+configura a coloração do prompt de comando do Git para revisão facilitada.
 
 
 ## CONFIGURAÇÃO & INICIALIZAÇÃO
 
-Configuring user information, initializing and cloning repositories.
+Configurando informação de usuário, inicialização e clonando repositórios.
 
 ```
 git init
 ```
-initialize an existing directory as a Git repository.
+Inicializa um diretório existente como um reposório Git.
 
 ```
 git clone [url]
 ```
-retrieve an entire repository from a hosted location via URL
+Copia um repositório inteiro de um local hospedado via URL.
 
 
 ## PREPARAÇÃO (STAGE) & PRÉVIA (SNAPSHOT)
 
-Working with snapshots and the Git staging area
+Trabalhando com prévias e com a área de preparação Git
 
 ```
 git status
 ```
-show modified files in working directory, stage for your next commit.
+exibe arquivos modificados no diretório de trabalho, preparação para seu próximo commit.
 
 ```
 git add [file]
 ```
-add a file as it looks now to your next commit (stage).
+adiciona um arquivo como está agora para seu próximo commit (preparação).
 
 ```
 git reset [file]
 ```
-unstage a file while retaining the changes in working directory.
+desprepara um arquivo enquanto mantém as mudanças no diretório de trabalho.
 
 ```
 git diff
 ```
-diff of what is changed but not staged.
+diferenças do que foi modificado mas não está preparado.
 
 ```
 git diff --staged
 ```
-diff of what is staged but not yet committed.
+diferenças do que foi preparado mas não recebeu commit anda.
 
 ```
 git commit -m "[descriptive message]"
 ```
-commit your staged content as a new commit snapshot.
+aplica o conteúdo preparado como uma nova prévia commit.
 
 
 ## RAMIFICAÇÃO (BRANCH) & INTEGRAÇÃO (MERGE)
 
-Isolating work in branches, changing context, and integrating changes.
+Isolando o trabalho em ramos, alterando contexto, e integrando mudanças.
 
 ```
 git branch
 ```
-list your branches. a * will appear next to the currently active branch.
+lista seus ramos (branches). um * aparecerá próximo ao ramo atualmente ativo.
 
 ```
 git branch [branch-name]
 ```
-create a new branch at the current commit.
+cria um novo ramo no commit atual
 
 ```
 git checkout
 ```
-switch to another branch and check it out into your working directory.
+troca para outro ramo (branch) e sai para o diretório de trabalho atual
 
 ```
 git merge [branch]
 ```
-merge the specified branch's history into the current one.
+merge o ramo histórico do especificado ao atual.
 
 ```
 git log
 ```
-show all commits in the current branch's history.
+exibe todos os commits no histórico do ramo atual.
 
 
 ## INSPEÇÃO & COMPARAÇÃO
 
-Examining logs, diffs and object information.
+Examinando logs, diferenças and informação de objetos.
 
 ```
 git log
 ```
-show the commit history for the currently active branch.
+exibe todos os commits no histórico do ramo atual.
 
 ```
 git log branchB..branchA
 ```
-show the commits on branchA that are not on branchB.
+exibe os commits no branchA que não estão no branchB
 
 ```
 git log --follow [file]
 ```
-show the commits that changed file, even across renames.
+exibe os commits que alteraram file, mesmo entre renomeações.
 
 ```
 git diff branchB...branchA
 ```
-show the diff of what is in branchA that is not in branchB.
+exibe as diferenças do que está em branchA mas não em branchB.
 
 ```
 git show [SHA]
 ```
-show any object in Git in human-readable format.
+exibe qualquer objeto no Git em formato legível.
 
 
-## RATREANDO MUDANÇAS DE CAMINHO
+## RASTREANDO MUDANÇAS DE CAMINHO
 
-Versioning file removes and path changes.
+Versionando remoções e movimentações de arquivo.
 
 ```
 git rm [file]
 ```
-delete the file from project and stage the removal for commit.
+deleta o arquivo do projeto e prepara a remoção para o commit.
 
 ```
 git mv [existing-path] [new-path]
 ```
-change an existing file path and stage the move.
+altera um caminho de arquivo existente e prepara (stage) a movimentação.
 
 ```
 git log --stat -M
 ```
-show all commit logs with indications of any paths that moved.
+exibe todos os logs de commits com indicações de caminhos que foram movidos.
 
 
 ## IGNORANDO PADRÕES
 
-Preventing unintentional staging or commiting of files
+Prevenindo preparação ou commit de arquivos não intencionais.
 
 ```
 logs/
 *.notes
 pattern*/
 ```
-save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.
+salve um arquivo com os padrões desejados como .gitignore com entradas de combinação diretas ou indiretas.
 
 ```
 git config --global core.excludesfile [file]
 ```
-system wide ignore pattern for all local repositories.
+padrões a serem ignorados por todos os repositórios locais.
 
 
 ## COMPARTILHAMENTO E ATUALIZAÇÃO
 
-Retrieving updates from another repository and updating local repos.
+Recuperando atualizações de outro repositório e atualizando repositórios locais.
 
 ```
 git remote add [alias] [url]
 ```
-add a git URL as an alias.
+adiciona um URL git como um alias (pseudônimo).
 
 ```
 git fetch [alias]
 ```
-fetch down all the branches from that Git remote.
+busca todos os ramos (branches) do Git remoto.
 
 ```
 git merge [alias]/[branch]
 ```
-merge a remote branch into your current branch to bring it up to date.
+merge um ramo remoto ao ramo atual para atualizá-lo.
 
 ```
 git push [alias] [branch]
 ```
-transmit local branch commits to the remote repository branch.
+transmite commits do ramo local para o ramo do repositório remoto.
 
 ```
 git pull
 ```
-fetch and merge any commits from the tracking remote branch.
+busca e merge qualquer commit do ramo remoto rastreado.
 
 
 ## REESCREVENDO HISTÓRICO
 
-Rewriting branches, updating commits and clearing history
+Reescrevendo ramos, atualizando commits e limpando o histórico
 
 ```
 git rebase [branch]
 ```
-apply any commits of current branch ahead of specified one.
+aplica quaisquer commits do ramo atual que esteja à frente do especificado.
 
 ```
 git reset --hard [commit]
 ```
-clear staging area, rewrite working tree from specified commit.
+limpa a area de preparação, reescreve a árvore de trabalho a partir do commit especificado.
 
 
 ## COMMITS TEMPORÁRIOS
 
-Temporarily store modified, tracked files, in toder to change branches.
+Armazenando temporariamente arquivos modificados, rastreados com o objetivo de alterar ramos (branches).
 
 ```
 git stash
 ```
-save modified and staged changes.
+salva modificações e preparações.
 
 ```
 git stash list
 ```
-list stack-order of stashed file changes.
+lista em ordem de pilha das mudanças acumuladas no stash.
 
 ```
 git stash pop
 ```
-write working from top of stack.
+escreve o trabalho a partir do topo da pilha stash.
 
 ```
 git stash drop
 ```
-discard the changes from top of stash stack.
+discarta as mudanças a partir do top da pilha stash.
