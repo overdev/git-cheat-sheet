@@ -19,7 +19,7 @@ Configuring user information used across all local repositories.
 ```
 git config --global user.name "[firstname lastname]"
 ```
-set a name that is identifiable for credit when review vesion history.
+set a name that is identifiable for credit when review version history.
 
 ```
 git config --global user.email "[valid-email]"
@@ -44,7 +44,7 @@ initialize an existing directory as a Git repository.
 ```
 git clone [url]
 ```
-retrieve an entire repository from a hosted location via URL
+retrieve an entire repository from a hosted location via URL.
 
 
 ## STAGE & SNAPSHOT
