@@ -183,32 +183,32 @@ system wide ignore pattern for all local repositories.
 
 ## SHATE AND UPDATE
 
-TODO..
+Retrieving updates from another repository and updating local repos.
 
 ```
-git 
+git remote add [alias] [url]
 ```
-.
+add a git URL as an alias.
 
 ```
-git 
+git fetch [alias]
 ```
-.
+fetch down all the branches from that Git remote.
 
 ```
-git 
+git merge [alias]/[branch]
 ```
-.
+merge a remote branch into your current branch to bring it up to date.
 
 ```
-git 
+git push [alias] [branch]
 ```
-.
+transmit local branch commits to the remote repository branch.
 
 ```
-git 
+git pull
 ```
-.
+fetch and merge any commits from the tracking remote branch.
 
 
 ## REWRITE HISTORY
