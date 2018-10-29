@@ -51,33 +51,193 @@ retrieve an entire repository from a hosted location via URL
 
 ## STAGE & SNAPSHOT
 
-TODO..
+Working with snapshots and the Git staging area
+
+```
+git status
+```
+show modified files in working directory, stage for your next commit.
+
+```
+git add [file]
+```
+add a file as it looks now to your next commit (stage).
+
+```
+git reset [file]
+```
+unstage a file while retaining the changes in working directory.
+
+```
+git diff
+```
+diff of what is changed but not staged.
+
+```
+git diff --staged
+```
+diff of what is staged but not yet committed.
+
+```
+git commit -m "[descriptive message]"
+```
+commit your staged content as a new commit snapshot.
+
 
 ## BRANCH & MERGE
 
 TODO..
 
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
 ## INSPECT & COMPARE
 
 TODO..
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
 
 ## TRACKING PATH CHANGES
 
 TODO..
 
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+
 ## IGNORING PATTERNS
 
 TODO..
+
+```
+git 
+```
+.
+
 
 ## SHATE AND UPDATE
 
 TODO..
 
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+
 ## REWRITE HISTORY
 
 TODO..
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
 
 ## TEMPORARY COMMITS
 
 TODO..
 
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
+
+```
+git 
+```
+.
